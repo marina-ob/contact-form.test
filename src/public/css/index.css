@@ -1,0 +1,91 @@
+.contact-form__heading {
+    width: 1512px;
+    text-align: center;
+}
+
+.contact-form__heading h2 {
+    color: #8B7969;
+    font-size: 35px;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-form__content {
+    width: 972px;
+    height: 606px;
+    margin: 0 auto;
+    color: #8B7969;
+}
+
+.form {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+.form__label--required {
+    color: #FF9494;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__group-content {
+    width: 60%;
+    text-align: left;
+}
+
+.form__input--text,
+.form__input--textarea {
+    width: 100%;
+}
+
+.form__input--text input,
+.form__input--text select,
+.form__input--textarea textarea {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__input--radio input {
+    accent-color: #8B7969;
+}
+
+::placeholder {
+    color: #C5B9B0;
+}
+
+.form__button-submit {
+    padding: 10px 40px;
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 3px;
+    background: #82756A;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+}

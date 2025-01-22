@@ -1,0 +1,23 @@
+.body {
+    width: 1512px;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1512px;
+    height: 100px;
+    border-bottom: solid 1px #E0DFDE;
+}
+
+.logo_title {
+    color: #8B7969;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
