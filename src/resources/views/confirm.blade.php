@@ -16,14 +16,27 @@
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">お名前</th>
                     <td class="confirm-table__text">
-                        <input type="text" name="first_name" value="{{ $contact['first_name'] }}" readonly />
-                        <input type="text" name="last_name" value="{{ $contact['last_name'] }}" readonly />
+                        <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}" readonly />
+                        <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}" readonly />
+                        <div class="confirm-table__text__content">
+                            {{ $contact['last_name'] }}　
+                            {{ $contact['first_name'] }}
+                        </div>
                     </td>
                 </tr>
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">性別</th>
                     <td class="confirm-table__text">
-                        <input type="integer" name="gender" value="{{ $contact['gender'] }}" readonly />
+                        <input type="hidden" name="gender" value="{{ $contact['gender'] }}" readonly />
+                        <div class="confirm-table__text__content">
+                            <?php if ($contact['gender'] == '1') {
+                                echo '男性';
+                            } elseif ($contact['gender'] == '2') {
+                                echo '女性';
+                            } else {
+                                echo 'その他';
+                            } ?>
+                        </div>
                     </td>
                 </tr>
                 <tr class="confirm-table__row">
@@ -53,7 +66,20 @@
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">お問い合わせの種類</th>
                     <td class="confirm-table__text">
-                        <input type="integer" name="category_id" value="{{ $contact['category_id'] }}" readonly />
+                        <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}" readonly />
+                        <div class="confirm-table__text__content">
+                            <?php if ($contact['category_id'] == '1') {
+                                echo '商品のお届けについて';
+                            } elseif(['category_id'] == '2') {
+                                echo '商品の交換について';
+                            }elseif(['category_id'] == '3') {
+                                echo '商品トラブル';
+                            }elseif(['category_id'] == '4') {
+                                echo 'ショップへのお問い合わせ';
+                            } else {
+                                echo 'その他';
+                            } ?>
+                        </div>
                     </td>
                 </tr>
                 <tr class="confirm-table__row">

@@ -1,2 +1,110 @@
+.body {
+    width: 1512px;
+}
 
+.header {
+    margin-top: -20px;
+    width: 1512px;
+    height: 100px;
+    border-bottom: solid 1px #E0DFDE;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
 
+.logo_title {
+    padding-top: 15px;
+    color: #8B7969;
+    text-align: center;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+}
+
+.form {
+    position: absolute;
+    top: 40%;
+    left: 1316px;
+    width: 100px;
+    height: 34px;
+    border: solid 1px #D9C6B5;
+    border-radius: 3px;
+    background-color: #F6F6F6;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.logout__button-btn {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #D9C6B5;
+    background-color: #F6F6F6;
+    border: none;
+}
+
+.login-form__heading {
+    width: 1512px;
+    height: 100%;
+}
+
+.login-form__heading h2 {
+    color: #8B7969;
+    font-size: 35px;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginate {
+    width: 219px;
+    height: 31px;
+    border: solid 1px #E0DFDE;
+}
+
+.admin-container{
+    width: 1183px;
+    margin: 0 auto;
+}
+
+.contacts {
+    width: 1183px;
+    height: 570px;
+    margin: 0 auto;
+    color: #99897C;
+    font-weight: lighter;
+}
+
+.contacts__table {
+    width: 100%;
+    height: 100%;
+    border: solid 1px #E0DFDE;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.table-heading {
+    background-color: #8B7969;
+    color: #fff;
+    height: 59px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.table-inner {
+    border-bottom: solid 1px #E0DFDE;
+    margin-left: 50px;
+}

@@ -53,6 +53,10 @@
     padding-left: 40px;
 }
 
+.confirm-table__text__content {
+    margin-left: 40px;
+}
+
 .confirm-table__row:last-child .confirm-table__header,
 .confirm-table__row:last-child .confirm-table__text {
     border-bottom-width: 0;

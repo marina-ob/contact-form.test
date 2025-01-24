@@ -25,7 +25,11 @@ class ContactController extends Controller
         return view('thanks');
     }
 
-    public function register() {
-        return view('register');
+    public function admin() {
+        $contacts = Contact::all();
+        $contacts = Contact::Paginate(7);
+        return view('admin',compact('contacts'));
     }
+
+    
 }

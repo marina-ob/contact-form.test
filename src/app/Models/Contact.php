@@ -21,7 +21,7 @@ class Contact extends Model
     ];
 
     public function category() {
-        return $this->belongsTo('App\Models\Author');
+        return $this->belongsTo('App\Models\Category');
     }
 
 }
