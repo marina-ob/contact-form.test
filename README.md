@@ -14,13 +14,13 @@
 　　３..env.exampleファイルから.envを作成し、環境変数を変更\
 　　４.php artisan key:generate\
 　　５.php artisan migrate\
-　　６.php artisan db:seed\
+　　６.php artisan db:seed
   
 ## 使用技術  
   
 　・PHP 8.4.1\
 　・Laravel 8.83.29\
-　・MySQL 8.0.26\
+　・MySQL 8.0.26
  
 ## URL
 　・開発環境：http://localhost/  
