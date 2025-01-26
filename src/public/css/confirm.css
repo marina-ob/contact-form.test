@@ -1,6 +1,7 @@
 .confirm__heading {
     width: 1512px;
     text-align: center;
+    margin: 60px 0;
 }
 
 .confirm__heading h2 {
@@ -40,17 +41,29 @@
     color: #F6F4F2;
 }
 
-.confirm-table__text {
+.confirm-table__text,
+.confirm-table__text--email,
+.confirm-table__text--tel {
     padding: 15px;
     border-bottom: 1px solid #E0DFDE;
 }
 
-.confirm-table__text input {
+.confirm-table__text input,
+.confirm-table__text--email input,
+.confirm-table__text--tel input {
     width: 100%;
     outline: none;
     border: none;
     color: #A19285;
     padding-left: 40px;
+    font-size: 16px;
+}
+
+.confirm-table__text--email input,
+.confirm-table__text--tel {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .confirm-table__text__content {
@@ -63,7 +76,7 @@
 }
 
 .form__button {
-    margin-top: 30px;
+    margin-top: 45px;
     text-align: center;
 }
 
@@ -76,13 +89,19 @@
     cursor: pointer;
     width: 120px;
     height: 42px;
+    margin-left: 190px;
+    font-size: 15px;
 }
 
 .edit {
-    padding: 10px 40px;
+    padding: 5px 0px;
     color: #8B7969;
     cursor: pointer;
-    width: 40px;
-    height: 24px;
-
+    width: 32px;
+    height: 28px;
+    border: none;
+    background: #fff;
+    border-bottom: solid 1px #8B7969;
+    font-size: 15px;
+    margin-left: 40px;
 }
