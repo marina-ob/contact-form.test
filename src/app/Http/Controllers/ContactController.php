@@ -65,7 +65,21 @@ class ContactController extends Controller
     }
 
     public function search(Request $request) {
-        $contacts = Contact::where('gender',$request->gender)->where('category_id',$request->category_id)->get();
+        $keyword = $request->input('keyword');
+        $gender = $request->input('gender');
+        $category_id = $request->input('category_id');
+        $date = $request->input('date');
+
+        $query = Contact::query();
+
+        $query = Contact::where('first_name', 'like', '%' . $keyword . '%')->orWhere('last_name', 'like', '%' . $keyword . '%')->orWhere('email', 'like', '%' . $keyword . '%')->where('gender', $gender)->where('category_id', $category_id)->where('created_at', 'like', '%' . $date . '%')->Paginate(7);
+
+        $contacts =$query;
         return view('admin',compact('contacts'));
+    }
+
+    public function destroy(Request $request) {
+        Contact::find($request->id)->delete();
+        return redirect('admin');
     }
 }

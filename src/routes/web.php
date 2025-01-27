@@ -22,3 +22,4 @@ Route::post('register',[ContactController::class,'store']);
 Route::post('login',[LoginController::class,'store']);
 Route::get('/admin', [ContactController::class, 'admin']);
 Route::get('/contacts/search', [ContactController::class, 'search']);
+Route::delete('/delete',[ContactController::class,'destroy']);
